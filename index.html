@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html manifest="---application-cache.appcache">
+
+<head>
+  <title>wooii</title>
+  <meta charset="UTF-8" />
+  <meta content="陈晨风, Chenfeng Chen, Morwin" name="author" />
+  <meta content="wooii" name="keywords" />
+  <meta content="This is just a personal website of Chenfeng Chen." name="description" />
+  <link href="files/favicon32.ico" rel="icon" />
+  <link href="files/code.wooii.css" rel="stylesheet" type="text/css" />
+  <script src="files/code.jquery.tools.min.js"></script>
+  <!-- activate tabs, nestedtabs and accordion -->
+  <script>
+    $(function () {
+      $("ul.tabs").tabs("div.tabs-panes", { history: true });
+      $("ul.nestedtabs").tabs("div.nestedtabs-panes");
+      $("div.accordion").tabs("div.accordion-panes", { tabs: 'h2', effect: 'slide' });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- adminbar -->
+  <div id="adminbar">
+    <a id="wooii" href="http://wooii.com" title="wooii.com">
+      <img
+      src="files/wooii-svg.svg" 
+      alt="wooii icon"
+      height="64px"
+      width="64px" />
+    </a>
+  </div>
+
+  <!-- content -->
+  <div id="content">
+    <!-- tabs -->
+    <ul class="tabs">
+      <li class="tabs-1"><a href="#do"><strong>Works</strong></a></li>
+      <li class="tabs-2"><a href="#Values"><strong>Values</strong><small> </small></a></li>
+      <li class="tabs-3"><a href="#about"><strong>About</strong></a></li>
+    </ul>
+
+    <!-- tabs-wrap -->
+    <div class="tabs-wrap">
+
+          
+    <!-- do -->
+    <div class="tabs-panes">
+        <ul class="nestedtabs">
+          <li><a href="#b1"><strong>Selected works</strong><small> </small></a></li>
+
+        </ul>
+        <div class="nestedtabs-panes">
+          <a href="https://cchen.shinyapps.io/PropertyInvest/" title="PropertyInvest">
+            <strong>1. Simulation of the annualized rate of return on an investment property</strong>
+          </a>
+          <br>
+          <br>
+          <strong>2. A Model of Life Satisfaction</strong><br>
+          <img alt="The Model of Life Satisfaction" src="files/life-satisfaction.jpg" width="450" /><br>
+        </div>
+
+      </div>
+      <!-- Values -->
+      <div class="tabs-panes">
+        <ul class="nestedtabs">
+          <li><a href="#a1"><strong>道业身题学做</strong></a></li>
+        </ul>
+        <div class="nestedtabs-panes">
+          <p>题：觉悟。<br>
+            学：因果，万法一业。<br>
+            做：戒定慧，直心专念务实。<br>
+            身：作息性情，衣食住行医用理乐。<br>
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- about -->
+      <div class="tabs-panes">
+        <ul class="nestedtabs">
+          <li><a href="#c1"><strong>Chenfeng Chen</strong></a></li>
+          <li><a href="#b2"><strong>MyBookmarks</strong><small> </small></a></li>
+        </ul>
+        <div class="nestedtabs-panes">
+          <!-- Chenfeng Chen -->
+          <div class="accordion">
+            <h2>A young man's thinking</h2>
+            <div class="accordion-panes">
+              <img alt="mewhite" src="files/mewhite.png" /><br>
+              <p STYLE="text-align:left">
+                <a href="http://wooii.wordpress.com/" title="My Blog">Aries Blog</a><br>
+                <br>
+                <strong>七立</strong><br>
+                一七而无忧，心乃天成；<br>
+                二七而知奋，心乃自成；<br>
+                三七而明理，心乃动成；<br>
+                四七而立业，心乃定成。<br>
+                <small>written on 2007-05-19</small><br>
+                <br>
+                <strong>少年志</strong><br>
+                吾心愚钝，自迷迷它。<br>
+                虽生有宏志，然不知大志为何。<br>
+                人处天地间，当以何立之？<br>
+                道乎？德乎？<br>
+                然何以得道，何以明德？<br>
+                吾虽已成，仍不知也。<br>
+                哀哉悲哉。<br>
+                人生凄短，纵世福尽享，所为为何？<br>
+                朝不得道，夕何以死？<br>
+                愿此数言，自醒醒汝。<br>
+              </p>
+            </div>
+            <h2>Education</h2>
+            <div class="accordion-panes">
+              <p STYLE="text-align:left">
+                <img alt="陈晨风, Chenfeng Chen, Morwin" src="files/cc2010.png" width="60" /><br>
+                PhD: The University of Queensland<br>
+                Master of Molecular Biology: The University of Queensland<br>
+                大学: 厦门大学生物科学三班<br>
+                高中: 乐清中学理科五班<br>
+                初中: 乐城镇二中七班<br>
+                小学: 乐城镇一小四班<br>
+                学前: 乐清市机关幼儿园一班<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="nestedtabs-panes">
+          <!-- MyBookmarks -->
+          <strong>My Bookmarks</strong><br>
+          <a href="http://scholar.google.com/">Google Scholar</a><br>
+          <a href="http://www.ncbi.nlm.nih.gov/">NCBI</a><br>
+          <a href="http://www.nature.com/">Nature</a><br>
+          <a href="http://www.sciencemag.org/">Science</a><br>
+          <a href="http://www.nejm.org/">The New England Journal of Medicine</a><br>
+          <a href="http://www.cancer.gov/">National Cancer</a><br>
+          <a href="https://github.com/wooii/">Github</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div id="footer">
+    <footer>
+      <script type="text/javascript">
+        var today = new Date()
+        var year = today.getFullYear()
+        document.write("wooii © 2006 - " + year + " | Last Modified: " + document.lastModified)
+      </script>
+    </footer>
+  </div>
+
+</body>
+
+</html>
